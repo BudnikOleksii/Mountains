@@ -3,6 +3,35 @@
     padding-top: 264px;
     position: relative;
     background: url(../img/bg_1.jpg) center center/cover no-repeat;
+
+    &__heading-main {
+        max-width: 45%;
+        font-size: 50px;
+        line-height: 0.8;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: $color-white;
+        span {
+            font-family: $font-brigin;
+            font-size: 66px;
+            line-height: 40px;
+            font-weight: 400;
+            text-transform: none;
+            letter-spacing: 0.02em;
+            color: $color-blue-6;
+        }
+    }
+
+    &__descr {
+        margin: 15px 0 27px 0;
+        max-width: 40%;
+        opacity: 0.74;
+        font-size: 18px;
+        line-height: 29px;
+        font-weight: 400;
+        color: $color-white;
+    }
 }
 
 .nav {

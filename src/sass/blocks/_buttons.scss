@@ -1,13 +1,23 @@
 .btn {
-    width: 153px;
-    height: 46px;
-    background-color: transparent;
-    border: 3.0px solid $color-blue-main;
+    width: 252px;
+    height: 60px;
+    background-color: $color-blue-main;
+    box-shadow: 0px 0px 35px 0px rgba(2,3,3,0.05);
+    font-size: 14px;
     border-radius: 4.0px;
-    font-size: 12px;
     line-height: 44px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.16em;
-    color: $color-blue-main;
+    color: $color-white;
+    border: none;
+
+    &--call {
+        width: 153px;
+        height: 46px;
+        background-color: transparent;
+        border: 3.0px solid $color-blue-main;
+        font-size: 12px;
+        color: $color-blue-main;
+    }
 }
