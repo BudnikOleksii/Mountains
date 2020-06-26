@@ -39,6 +39,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 100;
 
     &__brand {
         margin: 0 61px 0 15px;
