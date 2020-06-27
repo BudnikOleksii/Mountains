@@ -1,0 +1,82 @@
+.journal {
+    padding: 71px 0 90px 0;
+
+    &__img {
+        flex: 0 0 33.333333%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &_1 {
+            background: url(../img/journal/journal_1.jpg) center center/cover no-repeat;
+        }
+
+        &_2 {
+            background: url(../img/journal/journal_2.jpg) center center/cover no-repeat;
+        }
+
+        &_3 {
+            background: url(../img/journal/journal_3.jpg) center center/cover no-repeat;
+        }
+
+        svg {
+            height: 81px;
+            width: 81px;
+            fill: $color-white;
+        }
+    }
+
+    &__item {
+        flex: 0 0 33.333333%;
+        padding: 47px 54px;
+        text-align: center;
+    }
+
+    &__name {
+        font-size: 11px;
+        line-height: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: $color-blue-1;
+
+        &--1 {
+            color: $color-blue-2;
+        }
+    }
+
+    &__header {
+        margin-top: 55px;
+        margin-bottom: 27px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: $color-grey-dark-1;
+
+        &--2 {
+            color: $color-grey-dark-2;
+        }
+    }
+
+    &__descr {
+        margin-bottom: 39px;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+        color: $color-text-2;
+
+        &--3 {
+            color: $color-text-3;
+        }
+    }
+
+    &__number {
+        font-style: italic;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 400;
+        color: $color-grey-dark-1;
+    }
+}
