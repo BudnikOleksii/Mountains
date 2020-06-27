@@ -1,0 +1,15 @@
+@mixin heading {
+    font-size: 20px;
+    line-height: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: $color-headers;
+}
+
+@mixin descr($fz) {
+    font-size: $fz;
+    line-height: 26px;
+    font-weight: 400;
+    color: $color-text-1;
+}
