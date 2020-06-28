@@ -1,0 +1,9 @@
+.work {
+    padding: 71px 0 105px 0;
+    text-align: center;
+
+    &__heading {
+        @include heading(30px);
+        margin: 36px 0 75px 0;
+    }
+}

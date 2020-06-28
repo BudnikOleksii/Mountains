@@ -1,6 +1,6 @@
-@mixin heading {
-    font-size: 20px;
-    line-height: 20px;
+@mixin heading($fz) {
+    font-size: $fz;
+    line-height: $fz;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;

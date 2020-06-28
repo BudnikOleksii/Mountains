@@ -28,7 +28,7 @@
     &__heading {
         margin-top: 43px;
         margin-bottom: 29px;
-        @include heading;
+        @include heading(20px);
     }
 
     &__descr {

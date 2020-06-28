@@ -6,7 +6,7 @@
     &__heading {
         margin-top: 41px;
         margin-bottom: 25px;
-        @include heading;
+        @include heading(20px);
     }
 
     &__descr {
