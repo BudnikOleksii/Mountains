@@ -6,4 +6,47 @@
         @include heading(30px);
         margin: 36px 0 75px 0;
     }
+
+    &__item {
+        flex: 0 0 25%;
+        text-align: center;
+    }
+
+    &__circle {
+        @include circle(48px);
+        background-color: $color-white;
+        border: 3.0px solid $color-blue-main;
+        font-family: $font-roboto;
+        font-size: 16px;
+        line-height: 50px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #3bb0eb;
+    }
+
+    &__icon {
+        @include circle(179px);
+        margin-top: 58px;
+        background: #f0f3f6 url(../icons/work/bg.svg) no-repeat center center;
+        box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.18);
+    }
+
+    &__subheader {
+        margin-top: 29px;
+        font-family: $font-roboto;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 900;
+        color: $color-headers;
+    }
+
+    &__descr {
+        margin: 0 auto;
+        max-width: 205px;
+        font-family: $font-roboto;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 300;
+        color: $color-text-1;
+    }
 }
