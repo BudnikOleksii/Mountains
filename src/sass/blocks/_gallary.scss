@@ -1,0 +1,24 @@
+.gallary {
+    padding: 71px 0 79px 0;
+    text-align: center;
+
+    &__heading {
+        margin-top: 36px;
+        margin-bottom: 72px;
+        @include heading(30px);
+    }
+
+    &__block {
+        &:not(:last-child) {
+            margin-right: auto;
+        }
+    }
+
+    &__img {
+        display: block;
+        
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}
