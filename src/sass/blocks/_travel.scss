@@ -1,0 +1,73 @@
+.travel {
+    min-height: 1020px;
+    background: url(../../img/bg_3.jpg) center bottom no-repeat;
+    position: relative;
+    text-align: center;
+
+    &__map {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__heading {
+        margin-top: 36px;
+        margin-bottom: 97px;
+        @include heading(30px);
+    }
+
+    &__card {
+        width: 200px;
+        height: 382px;
+        padding: 15px 20px;
+        border-radius: 4.0px;
+        text-align-last: left;
+        color: $color-white;
+        background-image: url(../../img/travel/1_carp.jpg);
+        z-index: 5;
+
+        &:not(:last-child) {
+            margin-right: auto;
+        }
+    }
+
+    &__stars {
+        fill: $color-white;
+    }
+
+    &__location {
+        margin-top: 114px;
+        margin-bottom: 16px;
+        font-size: 28px;
+        line-height: 28px;
+        font-weight: 400;
+    }
+
+    &__descr {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+        margin-bottom: 100px;
+        position: relative;
+
+        span {
+            display: none;
+        }
+    }
+
+    &__price {
+        display: flex;
+        justify-content: space-between;
+        font-size: 26px;
+        line-height: 22px;
+        font-weight: 800;
+
+        span {
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 400;
+            text-decoration: line-through;
+        }
+    }
+}
