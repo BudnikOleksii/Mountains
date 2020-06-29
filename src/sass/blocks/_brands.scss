@@ -1,0 +1,23 @@
+.brand {
+    background-color: #f8f9fa;
+
+    &__wrapper {
+        height: 180px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__link {
+        height: 38px;
+        width: 38px;
+        fill: #191919;
+        opacity: 0.2;
+        transition: all .2s;
+
+        &:hover {
+            fill: $color-blue-main;
+            opacity: 1;
+        }
+    }
+}

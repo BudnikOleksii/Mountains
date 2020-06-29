@@ -24,11 +24,30 @@
         border-radius: 4.0px;
         text-align-last: left;
         color: $color-white;
-        background-image: url(../../img/travel/1_carp.jpg);
         z-index: 5;
 
         &:not(:last-child) {
             margin-right: auto;
+        }
+
+        &:nth-child(1) {
+            background-image: url(../../img/travel/1_carp.jpg);
+        }
+
+        &:nth-child(2) {
+            background-image: url(../../img/travel/2_alps.jpg);
+        }
+
+        &:nth-child(3) {
+            background-image: url(../../img/travel/3_pyrenees.jpg);
+        }
+
+        &:nth-child(4) {
+            background-image: url(../../img/travel/4_rocky.jpg);
+        }
+
+        &:nth-child(5) {
+            background-image: url(../../img/travel/5_caucas.jpg);
         }
     }
 
