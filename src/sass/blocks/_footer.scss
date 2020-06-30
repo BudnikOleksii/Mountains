@@ -1,0 +1,67 @@
+.footer {
+    height: 85px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__copyright {
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: $color-white;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__icon {
+        margin: 0 3px;
+        width: 39px;
+        height: 39px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:nth-child(1) {
+            background-color: $color-blue-3;
+        }
+
+        &:nth-child(2) {
+            background-color: $color-blue-4;
+        }
+
+        &:nth-child(3) {
+            background-color: $color-blue-5;
+        }
+    }
+
+    &__link {
+        fill: $color-white;
+    }
+
+    &__phone {
+        &,
+        &:link,
+        &:visited {
+            padding: 3px;
+            font-family: $font-roboto;
+            font-size: 27px;
+            line-height: 1.2;
+            font-weight: 900;
+            color: $color-white;
+            transition: all .2s;
+        }
+
+        &:hover {
+            text-decoration: none;
+            color: $color-blue-main;
+        }
+    }
+}
