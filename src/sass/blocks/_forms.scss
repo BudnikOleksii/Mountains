@@ -17,6 +17,8 @@
         font-weight: 400;
         letter-spacing: 0.02em;
         color: $color-grey-light-5;
+        transition: all .2s;
+        
         &:not(:last-child) {
             border-right: 1px solid #ebebeb;
         }
@@ -24,7 +26,8 @@
         &:hover,
         &:focus:invalid {
             box-shadow: $shadow-red;
-            border: 2px solid $color-red;
+            border: 1px solid $color-red;
+            border-radius: 4px;
         }
 
         &:active, &:focus {
@@ -34,6 +37,7 @@
         &:focus {
             box-shadow: $shadow-default;
             border: 2px solid $color-blue-main;
+            border-radius: 4px;
         }
     }
 }
@@ -77,11 +81,12 @@
         line-height: 1.2;
         font-weight: 400;
         color: $color-grey-light-6;
+        transition: all .2s;
 
         &:hover,
         &:focus:invalid {
             box-shadow: $shadow-red;
-            border: 2px solid $color-red;
+            border: 1px solid $color-red;
         }
 
         &:active, &:focus {

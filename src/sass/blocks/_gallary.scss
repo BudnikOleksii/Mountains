@@ -16,9 +16,22 @@
 
     &__img {
         display: block;
+        outline-offset: 20px;
+        transition: all .2s;
         
         &:not(:last-child) {
             margin-bottom: 30px;
         }
+
+        &:hover {
+            outline: 15px solid $color-blue-main;
+            transform: scale(1.05) translateY(-5px);
+            box-shadow: 0 25px 40px rgba($color-black, .5);
+            z-index: 20;
+        }
+    }
+
+    &:hover &__img:not(:hover) {
+        transform: scale(.95);
     }
 }
