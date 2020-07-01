@@ -1,0 +1,96 @@
+.feed-form {
+    width: 855px;
+    height: 62px;
+    background-color: $color-white;
+    border-radius: 4.0px;
+    display: flex;
+    align-items: center;
+
+    &__input {
+        padding: 25px 21px;
+        flex: 1;
+        border: none;
+        height: 35px;
+        font-family: $font-roboto;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        color: $color-grey-light-5;
+        &:not(:last-child) {
+            border-right: 1px solid #ebebeb;
+        }
+
+        &:hover,
+        &:focus:invalid {
+            box-shadow: $shadow-red;
+            border: 2px solid $color-red;
+        }
+
+        &:active, &:focus {
+            outline: none;
+        }
+
+        &:focus {
+            box-shadow: $shadow-default;
+            border: 2px solid $color-blue-main;
+        }
+    }
+}
+
+.feed-block {
+    margin: 140px auto 0 auto;
+    padding: 40px 30px 50px 30px;
+    width: 515px;
+    height: 495px;
+    box-shadow: 2px 4px 51px 0px rgba(0,0,0,0.75);
+    background-color: rgba($color-white, .18);
+    border-radius: 8.0px;
+
+    &__header {
+        @include heading(36px);
+        color: $color-blue-main;
+    }
+
+    &__subheader {
+        margin-bottom: 31px;
+        font-size: 16px;
+        line-height: 29px;
+        font-weight: 400;
+        color: $color-grey-dark-3;
+    }
+}
+
+.feed-form-main {
+    display: flex;
+    flex-direction: column;
+
+    input {
+        margin-bottom: 20px;
+        padding: 24px 19px;
+        height: 60px;
+        background-color: $color-white;
+        border: 3px solid $color-white;
+        border-radius: 4px;
+        font-family: $font-roboto;
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: $color-grey-light-6;
+
+        &:hover,
+        &:focus:invalid {
+            box-shadow: $shadow-red;
+            border: 2px solid $color-red;
+        }
+
+        &:active, &:focus {
+            outline: none;
+        }
+
+        &:focus {
+            box-shadow: $shadow-default;
+            border: 2px solid $color-blue-main;
+        }
+    }
+}
