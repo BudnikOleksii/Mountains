@@ -45,6 +45,7 @@
     .contact {
         min-height: 470px;
         padding-top: 40px;
+        background-size: contain;
     }
 
     .feed-form {
@@ -52,6 +53,9 @@
     }
 
     .travel {
+        background-size: contain;
+        min-height: 860px;
+
         &__map {
             width: 90%;
         }
@@ -79,4 +83,128 @@
             width: 45%;
         }
     }
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 760px;
+    }
+
+    .nav {
+        &__brand {
+            margin: 0 15px;
+        }
+    }
+
+    .menu {
+        margin-right: 10px;
+    }
+
+    .header {
+        min-height: 500px;
+        padding-top: 200px;
+
+        &__heading-main {
+            font-size: 40px;
+
+            span {
+                font-size: 59px;
+            }
+        }
+
+        &__descr {
+            font-size: 16px;
+        }
+    }
+
+    .about {
+        min-height: 430px;
+
+        .wave {
+            margin-top: 50px;
+        }
+    }
+
+    .journal {
+        &__header {
+            margin-top: 25px;
+            margin-bottom: 20px;
+            font-size: 12px;
+        }
+
+        &__descr {
+            font-size: 11px;
+        }
+    }
+
+    .feed-form {
+        flex-direction: column;
+        width: 252px;
+        height: 100%;
+        background-color: transparent;
+
+        &__input {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 15px;
+        }
+    }
+
+    .work {
+        padding: 30px 0;
+        
+        &__heading {
+            margin: 30px 0 40px 0;
+        }
+
+        &__icon {
+            margin-top: 30px;
+            width: 145px;
+            height: 145px;
+        }
+
+        &__subheader {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        &__descr {
+            font-size: 13px;
+        }
+    }
+
+    .travel {
+        &__map {
+            display: none;
+        }
+
+        &__heading {
+            margin-bottom: 40px;
+        }
+
+        &__card {
+            margin-left: auto;
+            margin-bottom: 15px;
+            height: 365px;
+            width: 27%;
+
+            &:last-child {
+                margin-right: auto;
+            }
+        }
+
+        &__location {
+            margin-top: 102px;
+        }
+    }
+
+    .feed {
+        padding-top: 25px;
+        min-height: 1240px;
+
+        &__text {
+            font-size: 14px;
+        }
+    }
+    
 }
