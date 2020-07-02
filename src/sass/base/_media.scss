@@ -1,0 +1,82 @@
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .header {
+        min-height: 600px;
+
+        &__heading-main {
+            max-width: 62%;
+        }
+        &__descr {
+            max-width: 52%;
+        }
+    }
+
+    .about {
+        min-height: 575px;
+
+        &__map {
+            width: 90%;
+            left: 7%;
+        }
+
+        &__photo-1 {
+            left: 45%;
+            width: 50%;
+        }
+
+        &__photo-2 {
+            top: 45%;
+            left: 35%;
+            width: 30%;
+        }
+    }
+
+    .journal {
+        padding: 40px 0;
+
+        &__item {
+            padding: 20px 20px;
+        }
+    }
+
+    .contact {
+        min-height: 470px;
+        padding-top: 40px;
+    }
+
+    .feed-form {
+        width: 76%;
+    }
+
+    .travel {
+        &__map {
+            width: 90%;
+        }
+
+        &__card {
+            width: 19%;
+        }
+
+        &__location {
+            margin-top: 92px;
+        }
+    }
+
+    .gallary {
+        padding: 40px 0;
+        
+        &__block {
+            width: 100%;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        &__img {
+            width: 45%;
+        }
+    }
+}
