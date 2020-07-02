@@ -46,6 +46,7 @@
         min-height: 470px;
         padding-top: 40px;
         background-size: contain;
+        background-position: center bottom;
     }
 
     .feed-form {
@@ -207,4 +208,177 @@
         }
     }
     
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 575px;
+    }
+
+    .header {
+        padding-top: 110px;
+        min-height: 425px;
+
+        &__heading-main {
+            max-width: 88%;
+        }
+    }
+
+    .nav__wrapper {
+        justify-content: space-between;
+    }
+
+    .menu {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        padding: 20px 15px;
+        list-style: none;
+        background-color: rgba(111,111,111,0.8);
+        transition: all 0.6s;
+        &--active {
+            left: 0;
+        }
+        &__item {
+            padding-right: 0px;
+            margin: 10px 0;
+        }
+
+        &__link {
+            &,
+            &:link,
+            &:visited {
+                line-height: 20px;
+            }
+        }
+    }
+
+    .hamburger {
+        display: block;
+        top: 47px;
+        width: 20px;
+        height: 12px;
+        cursor: pointer;
+    
+        span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: $color-grey-light-5;
+            margin-bottom: 2px;
+            transition: all 0.5s;
+        }    
+    
+        &--active {
+            span {
+                margin-bottom: -2px;
+                &:nth-child(1) {
+                    transform: translateY(3px) rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    transform: translateY(3px) rotate(45deg);
+                }
+            }
+        }
+    }
+
+    .about {
+        &__photo-2 {
+            top: 40%;
+            width: 45%;
+        }
+    }
+
+    .journal {
+        &__heading {
+            margin-top: 20px;
+            margin-bottom: 35px;
+        }
+
+        &__img, &__item {
+            flex: 0 0 50%;
+        }
+
+        &__item--1 {
+            order: -1;
+        }
+        
+        &__img_3 {
+            order: 1;
+        }
+    }
+
+    .contact {
+        padding-top: 0;
+
+        &__heading {
+            margin: 20px 0;
+        }
+
+        &__descr {
+            margin-bottom: 15px;
+            font-size: 12px;
+            line-height: 24px;
+        }
+    }
+
+    .work__item {
+        flex: 0 0 50%;
+        margin-bottom: 15px;
+    }
+
+    .travel__card {
+        width: 36%;
+    }
+
+    .brand__wrapper {
+        height: 100px;
+    }
+
+    .feed {
+        &__heading {
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            margin-bottom: 40px;
+        }
+
+        &__text {
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
+    }
+
+    .feed-block {
+        margin-top: 0;
+    }
+
+    .footer {
+        &__copyright {
+            font-size: 12px;
+        }
+
+        &__phone {
+            &,
+            &:link,
+            &:visited {
+                font-size: 20px;
+            }
+        }
+    }
 }
