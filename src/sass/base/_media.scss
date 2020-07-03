@@ -78,6 +78,7 @@
             margin-bottom: 20px;
             display: flex;
             justify-content: space-around;
+            align-items: center
         }
 
         &__img {
@@ -361,6 +362,7 @@
         &__text {
             margin-bottom: 10px;
             font-size: 13px;
+            line-height: 20px;
         }
     }
 
@@ -411,11 +413,112 @@
             line-height: 20px;
         }
     }
+
+    .about {
+        min-height: 340px;
+
+        .wave {
+            margin-top: 25px;
+        }
+
+        &__heading {
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        &__descr {
+            max-width: 50%;
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+        &__photo-1 {
+            top: -4%;
+        }
+
+        &__photo-2 {
+            top: 40%;
+            left: 50%;
+        }
+    }
+
+    .journal {
+        &__header {
+            line-height: 22px;
+            letter-spacing: 0;
+            font-size: 13px;
+        }
+
+        &__descr {
+            display: none;
+        }
+
+        &__img {
+            min-height: 224px;
+        }
+    }
+
+    .work {
+        &__item {
+            padding: 5px;
+        }
+
+        &__icon {
+            background-image: none;
+            width: 90px;
+            height: 90px;
+        }
+
+        &__subheader {
+            font-size: 13px;
+        }
+
+        &__descr {
+            font-size: 12px;
+        }
+    }
+
+    .travel {
+        &__card {
+            width: 47%;
+            height: 383px;
+        }
+
+        &__descr {
+            margin-bottom: 90px;
+        }
+    }
+
+    .gallary {
+        padding: 20px 0;
+
+        &__heading {
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .feed {
+        padding-top: 0;
+
+        &__img-block span {
+            margin-left: 12px;
+        }
+    }
+
+    .footer {
+        flex-wrap: wrap;
+
+        &__phone {
+            flex: 0 0 100%;
+        }
+    }
 }
 
 @media (max-width: 400px) {
     .container {
         max-width: 320px;
+        padding: 0 5px;
     }
 
     .header {
@@ -427,6 +530,16 @@
 
         &__descr {
             max-width: 88%
+        }
+    }
+
+    .travel {
+        &__card {
+            width: 64%;
+        }
+            
+        &__descr {
+            margin-bottom: 110px;
         }
     }
 }
