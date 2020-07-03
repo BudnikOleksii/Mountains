@@ -1,6 +1,6 @@
 .travel {
     min-height: 1020px;
-    background: url(../../img/bg_3.jpg) center bottom no-repeat;
+    background: url(../img/bg_3.jpg) center bottom no-repeat;
     position: relative;
     text-align: center;
 
@@ -31,23 +31,23 @@
         }
 
         &:nth-child(1) {
-            background-image: url(../../img/travel/1_carp.jpg);
+            background-image: url(../img/travel/1_carp.jpg);
         }
 
         &:nth-child(2) {
-            background-image: url(../../img/travel/2_alps.jpg);
+            background-image: url(../img/travel/2_alps.jpg);
         }
 
         &:nth-child(3) {
-            background-image: url(../../img/travel/3_pyrenees.jpg);
+            background-image: url(../img/travel/3_pyrenees.jpg);
         }
 
         &:nth-child(4) {
-            background-image: url(../../img/travel/4_rocky.jpg);
+            background-image: url(../img/travel/4_rocky.jpg);
         }
 
         &:nth-child(5) {
-            background-image: url(../../img/travel/5_caucas.jpg);
+            background-image: url(../img/travel/5_caucas.jpg);
         }
     }
 

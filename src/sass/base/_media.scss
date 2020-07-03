@@ -382,3 +382,51 @@
         }
     }
 }
+
+@media (max-width: 575px) {
+    .container {
+        max-width: 400px;
+    }
+
+    .pl-47 {
+        padding-left: 10px;
+    }
+
+    .feed-block {
+        width: 100%;
+    }
+
+    .header {
+        &__heading-main {
+            max-width: 69%;
+            font-size: 23px;
+
+            span {
+                font-size: 34px;
+            }
+        }
+
+        &__descr {
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        max-width: 320px;
+    }
+
+    .header {
+        min-height: 375px;
+        
+        &__heading-main {
+            max-width: 77%;
+        }
+
+        &__descr {
+            max-width: 88%
+        }
+    }
+}
