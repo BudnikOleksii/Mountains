@@ -1,0 +1,132 @@
+.travel {
+  background: url(../images/bg_3.jpg) center bottom no-repeat;
+  text-align: center;
+
+  @media (max-width: 1199px) {
+    background-size: contain;
+  }
+
+  &__wave-svg {
+    opacity: 0.2;
+  }
+
+  &__container {
+    @include container();
+    min-height: 1020px;
+    background: url(../images/travel/worldmap.png) center top no-repeat;
+
+    @media (max-width: 1199px) {
+      min-height: 860px;
+    }
+  }
+
+  &__heading {
+    margin-top: 36px;
+    margin-bottom: 97px;
+    @include heading(30px);
+
+    @media (max-width: 991px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__row {
+    @include row();
+  }
+
+  &__card {
+    width: 200px;
+    height: 382px;
+    padding: 15px 20px;
+    border-radius: 4px;
+    text-align: left;
+    color: #fff;
+
+    @media (max-width: 1199px) {
+      width: 19%;
+    }
+
+    @media (max-width: 991px) {
+      margin-left: auto;
+      margin-bottom: 15px;
+      height: 365px;
+      width: 27%;
+
+      &:last-child {
+        margin-right: auto;
+      }
+    }
+
+    @media (max-width: 767px) {
+      width: 36%;
+    }
+
+    @media (max-width: 575px) {
+      width: 47%;
+      height: 383px;
+    }
+
+    &:not(:last-child) {
+      margin-right: auto;
+    }
+
+    &:nth-child(1) {
+      background-image: url(../images/travel/1_carp.jpg);
+    }
+
+    &:nth-child(2) {
+      background-image: url(../images/travel/2_alps.jpg);
+    }
+
+    &:nth-child(3) {
+      background-image: url(../images/travel/3_pyrenees.jpg);
+    }
+
+    &:nth-child(4) {
+      background-image: url(../images/travel/4_rocky.jpg);
+    }
+
+    &:nth-child(5) {
+      background-image: url(../images/travel/5_caucas.jpg);
+    }
+  }
+
+  &__stars {
+    fill: #fff;
+  }
+
+  &__article {
+    margin-top: 114px;
+    margin-bottom: 100px;
+
+    @media (max-width: 1199px) {
+      margin-top: 95px;
+    }
+  }
+
+  &__location {
+    margin-bottom: 16px;
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+
+  &__descr {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    font-size: 26px;
+    line-height: 22px;
+    font-weight: 800;
+
+    span {
+      font-size: 18px;
+      font-weight: 400;
+      text-decoration: line-through;
+    }
+  }
+}

@@ -1,0 +1,112 @@
+.feedback-form {
+  width: 855px;
+  height: 62px;
+  background-color: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 1199px) {
+    width: 76%;
+  }
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+    width: 252px;
+    height: 100%;
+    background-color: transparent;
+  }
+
+  &__input {
+    padding: 25px 21px;
+    flex: 1;
+    height: 35px;
+    font-family: $font-roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: $color-grey-light-5;
+    transition: box-shadow 0.4s, border-color 0.4s;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+
+    @media (max-width: 991px) {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 15px;
+    }
+
+    @media (max-width: 575px) {
+      margin-bottom: 5px;
+      padding: 8px;
+    }
+
+    &:not(:last-child) {
+      border-right: 1px solid #ebebeb;
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+
+    &:focus {
+      box-shadow: $shadow-default;
+      border-color: $color-main;
+    }
+
+    &:hover {
+      box-shadow: $shadow-red;
+      border-color: $color-border-danger;
+    }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus {
+      -webkit-text-fill-color: $color-grey-light-5;
+      box-shadow: 0 0 0 1000px #fff inset;
+      transition: background-color 5000s ease-in-out 0s;
+    }
+
+    &:focus:invalid {
+      box-shadow: $shadow-red;
+      border-color: $color-border-danger;
+    }
+  }
+}
+
+.feedback-main {
+  display: flex;
+  flex-direction: column;
+
+  &__input {
+    margin-bottom: 20px;
+    padding: 24px 19px;
+    height: 60px;
+    background-color: #fff;
+    border: 3px solid #fff;
+    border-radius: 4px;
+    font-family: $font-roboto;
+    font-size: 18px;
+    line-height: 1.2;
+    color: $color-grey-light-6;
+    transition: all 0.2s;
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+
+    &:focus {
+      box-shadow: $shadow-default;
+      border: 2px solid $color-main;
+    }
+
+    &:hover,
+    &:focus:invalid {
+      box-shadow: $shadow-red;
+      border: 1px solid $color-border-danger;
+    }
+  }
+}

@@ -1,0 +1,155 @@
+.journal {
+  &__container {
+    @include container();
+    padding: 71px 0 90px;
+    text-align: center;
+
+    @media (max-width: 1199px) {
+      padding: 40px 15px;
+    }
+  }
+
+  &__wave-svg {
+    opacity: 0.2;
+  }
+
+  &__heading {
+    @include heading(30px);
+    margin-top: 36px;
+    margin-bottom: 71px;
+
+    @media (max-width: 767px) {
+      margin-top: 20px;
+      margin-bottom: 35px;
+    }
+  }
+
+  &__row {
+    @include row();
+  }
+
+  &__img {
+    flex: 0 0 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 767px) {
+      flex: 0 0 50%;
+    }
+
+    &--1 {
+      background: url(../images/journal/journal_1.jpg) center center/cover
+        no-repeat;
+    }
+
+    &--2 {
+      background: url(../images/journal/journal_2.jpg) center center/cover
+        no-repeat;
+    }
+
+    &--3 {
+      background: url(../images/journal/journal_3.jpg) center center/cover
+        no-repeat;
+
+      @media (max-width: 767px) {
+        order: 1;
+      }
+    }
+
+    svg {
+      height: 81px;
+      width: 81px;
+      fill: #fff;
+    }
+  }
+
+  &__item {
+    flex: 0 0 33.33%;
+    padding: 47px 54px;
+    text-align: center;
+
+    @media (max-width: 1199px) {
+      padding: 20px;
+    }
+
+    @media (max-width: 767px) {
+      flex: 0 0 50%;
+    }
+
+    @media (max-width: 575px) {
+      padding: 10px;
+    }
+
+    &--1 {
+      @media (max-width: 767px) {
+        order: -1;
+      }
+    }
+  }
+
+  &__name {
+    font-size: 11px;
+    line-height: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: $color-blue-1;
+
+    &--1 {
+      color: $color-blue-2;
+    }
+  }
+
+  &__header {
+    margin-top: 55px;
+    margin-bottom: 27px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: $color-grey-dark-1;
+
+    @media (max-width: 991px) {
+      margin-top: 25px;
+      margin-bottom: 20px;
+      font-size: 12px;
+    }
+
+    @media (max-width: 575px) {
+      margin-top: 15px;
+      font-size: 11px;
+      line-height: 12px;
+    }
+
+    &--2 {
+      color: $color-grey-dark-2;
+    }
+  }
+
+  &__descr {
+    margin-bottom: 39px;
+    line-height: 22px;
+    color: $color-text-2;
+
+    @media (max-width: 991px) {
+      font-size: 11px;
+    }
+
+    @media (max-width: 575px) {
+      line-height: 12px;
+      margin-bottom: 10px;
+    }
+
+    &--3 {
+      color: $color-text-3;
+    }
+  }
+
+  &__number {
+    font-style: italic;
+    line-height: 17px;
+    color: $color-grey-dark-1;
+  }
+}

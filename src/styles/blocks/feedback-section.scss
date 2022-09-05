@@ -1,0 +1,129 @@
+.feedback {
+  background: url(../images/bg_4.jpg) center bottom no-repeat;
+
+  &__container {
+    @include container();
+    min-height: 1361px;
+    padding-top: 69px;
+    position: relative;
+    text-align: center;
+
+    @media (max-width: 991px) {
+      min-height: 1240px;
+      padding-top: 25px;
+    }
+
+    @media (max-width: 575px) {
+      padding-top: 0;
+    }
+  }
+
+  &__wave-svg {
+    opacity: 0.2;
+  }
+
+  &__heading {
+    margin-top: 36px;
+    margin-bottom: 91px;
+    @include heading(30px);
+
+    @media (max-width: 767px) {
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    padding: 40px 15px 0 16px;
+    text-align: left;
+    position: relative;
+
+    @media (max-width: 767px) {
+      margin-bottom: 40px;
+    }
+
+    &::before {
+      content: "\201C";
+      position: absolute;
+      top: 0;
+      left: 15px;
+      font-family: sans-serif;
+      font-size: 92px;
+      line-height: 33px;
+      color: $color-grey-light-3;
+      z-index: 1;
+    }
+  }
+
+  &__text {
+    margin-top: -30px;
+    margin-bottom: 29px;
+    font-size: 18px;
+    line-height: 33px;
+    color: $color-grey-light-3;
+
+    @media (max-width: 991px) {
+      font-size: 14px;
+    }
+
+    @media (max-width: 767px) {
+      margin-bottom: 10px;
+      font-size: 13px;
+      line-height: 20px;
+    }
+  }
+
+  &__img-block {
+    font-family: "OpenSans", serif;
+    font-size: 16px;
+    line-height: 33px;
+    font-weight: 300;
+    color: $color-main;
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-left: 20px;
+      font-weight: 700;
+    }
+  }
+
+  &__form-block {
+    margin: 140px auto 0;
+    padding: 40px 30px 50px;
+    width: 515px;
+    height: 495px;
+    box-shadow: 2px 4px 51px 0 rgba(0, 0, 0, 0.75);
+    background-color: rgba(255, 255, 255, 0.18);
+    border-radius: 8px;
+
+    @media (max-width: 767px) {
+      margin-top: 0;
+    }
+
+    @media (max-width: 575px) {
+      width: 100%;
+    }
+  }
+
+  &__form-header {
+    @include heading(36px);
+    color: $color-main;
+  }
+
+  &__form-message {
+    margin-bottom: 31px;
+    font-size: 16px;
+    line-height: 29px;
+    color: $color-grey-dark-3;
+  }
+}

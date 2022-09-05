@@ -1,7 +1,22 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+@import "./utils/normalize";
+@import "./utils/fonts";
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/animations";
 
-body {
-  background: $c-gray;
-}
+@import "./blocks/page.scss";
+@import "./blocks/buttons.scss";
+@import "./blocks/forms.scss";
+@import "./blocks/header.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/menu.scss";
+@import "./blocks/hamburger.scss";
+@import "./blocks/about-section.scss";
+@import "./blocks/journal-section.scss";
+@import "./blocks/contact-section.scss";
+@import "./blocks/work-section.scss";
+@import "./blocks/travel-section.scss";
+@import "./blocks/galary-section.scss";
+@import "./blocks/brand-section.scss";
+@import "./blocks/feedback-section.scss";
+@import "./blocks/footer.scss";

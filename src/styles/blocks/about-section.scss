@@ -1,0 +1,111 @@
+.about {
+  background-color: #f6f4f4;
+
+  &__container {
+    @include container();
+    min-height: 667px;
+    position: relative;
+
+    @media (max-width: 1199px) {
+      min-height: 575px;
+    }
+
+    @media (max-width: 991px) {
+      min-height: 430px;
+    }
+
+    @media (max-width: 575px) {
+      min-height: 340px;
+    }
+  }
+
+  &__map-img {
+    position: absolute;
+    top: 23px;
+    left: 100px;
+    opacity: 0.21;
+
+    @media (max-width: 1199px) {
+      width: 90%;
+      left: 7%;
+    }
+  }
+
+  &__photo {
+    position: absolute;
+
+    &--1 {
+      top: -36px;
+      left: 499px;
+
+      @media (max-width: 1199px) {
+        width: 50%;
+        left: 45%;
+      }
+
+      @media (max-width: 575px) {
+        top: -4%;
+      }
+    }
+
+    &--2 {
+      top: 277px;
+      left: 458px;
+
+      @media (max-width: 1199px) {
+        width: 30%;
+        left: 35%;
+        top: 45%;
+      }
+
+      @media (max-width: 767px) {
+        width: 45%;
+        top: 33%;
+      }
+
+      @media (max-width: 575px) {
+        top: 40%;
+        left: 50%;
+      }
+    }
+  }
+
+  &__wave-svg {
+    margin-top: 204px;
+    opacity: 0.2;
+
+    @media (max-width: 991px) {
+      margin-top: 50px;
+    }
+
+    @media (max-width: 575px) {
+      margin-top: 25px;
+    }
+  }
+
+  &__heading {
+    margin: 43px 0 29px;
+    @include heading(20px);
+    position: relative;
+    z-index: 1;
+
+    @media (max-width: 575px) {
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__descr {
+    margin-bottom: 30px;
+    max-width: 33%;
+    @include descr(14px);
+    position: relative;
+    z-index: 1;
+
+    @media (max-width: 575px) {
+      max-width: 50%;
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+}

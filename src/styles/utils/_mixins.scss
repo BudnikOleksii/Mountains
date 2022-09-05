@@ -1,6 +1,90 @@
-@mixin hover($_property, $_toValue) {
-  transition: #{$_property} 0.3s;
+@mixin container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: auto;
+
+  @media (max-width: 1199px) {
+    max-width: 960px;
+  }
+
+  @media (max-width: 991px) {
+    max-width: 760px;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 575px;
+  }
+
+  @media (max-width: 575px) {
+    max-width: 400px;
+  }
+
+  @media (max-width: 400px) {
+    max-width: 360px;
+    padding: 0 5px;
+  }
+}
+
+@mixin row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin heading($fz) {
+  font-size: $fz;
+  line-height: $fz;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: $color-headers;
+
+  @include text-hover-effect;
+}
+
+@mixin descr($fz) {
+  font-size: $fz;
+  line-height: 26px;
+  font-weight: 400;
+  color: $color-text-1;
+}
+
+@mixin circle($width) {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $width;
+  height: $width;
+  border-radius: 50%;
+}
+
+@mixin hover($_property, $_toValue, $_property2: 0, $_toValue2: 0) {
+  cursor: pointer;
+  transition: #{$_property} 0.4s;
+
   &:hover {
     #{$_property}: $_toValue;
+  }
+
+  @if $_property2 != 0 {
+    transition: #{$_property} 0.4s, #{$_property2} 0.4s;
+    &:hover {
+      #{$_property2}: $_toValue2;
+    }
+  }
+}
+
+@mixin text-hover-effect {
+  & {
+    color: #0000;
+    background: linear-gradient(90deg, #{$color-main} 50%,#000 0)
+      var(--pos,100%)/200% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: color 0.8s, background 0.8s;
+  }
+
+  &:hover {
+    --pos: 0%;
   }
 }

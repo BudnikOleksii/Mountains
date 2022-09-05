@@ -1,0 +1,23 @@
+.brand {
+  background-color: #f8f9fa;
+
+  &__wrapper {
+    @include container();
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 767px) {
+      height: 100px;
+    }
+  }
+
+  &__link {
+    height: 38px;
+    width: 38px;
+    fill: #191919;
+    opacity: 0.2;
+    @include hover(fill, $color-main, opacity, 1);
+  }
+}
