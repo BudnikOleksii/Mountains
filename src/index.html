@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <script
+      defer
+      type="text/javascript"
+      src="scripts/main.js"
+    ></script>
   </head>
-  <body class="page">
+  <body>
     <!-- Navigation -->
     <nav class="nav page__nav">
       <div class="nav__wrapper">
@@ -16,21 +21,25 @@
 
         <ul class="menu nav__menu">
           <li class="menu__item">
-            <a href="#" class="menu__link">our story</a>
+            <a href="#about" class="menu__link">our story</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">services</a>
-          </li>
-          <li class="menu__item"><a href="#" class="menu__link">work</a></li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">journal</a>
+            <a href="#journal" class="menu__link">services</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">contact</a>
+            <a href="#work" class="menu__link">work</a>
           </li>
-          <li class="menu__item"><a href="#" class="menu__link">work</a></li>
           <li class="menu__item">
-            <a href="#" class="menu__link">journal</a>
+            <a href="#travel" class="menu__link">journal</a>
+          </li>
+          <li class="menu__item">
+            <a href="#feedback-main" class="menu__link">contact</a>
+          </li>
+          <li class="menu__item">
+            <a href="#gallary" class="menu__link">gallary</a>
+          </li>
+          <li class="menu__item">
+            <a href="#brand" class="menu__link">socials</a>
           </li>
         </ul>
         <button class="btn btn--call">call us</button>
@@ -58,7 +67,7 @@
     </header>
 
     <!-- Section about us -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="about__container">
         <img
           src="images/about/map.png"
@@ -97,7 +106,7 @@
     </section>
 
     <!-- Section our journal -->
-    <section class="journal">
+    <section class="journal" id="journal">
       <div class="journal__container">
         <svg
           class="journal__wave-svg"
@@ -230,6 +239,7 @@
           action="http://localhost:3000/api"
           method="post"
           class="feedback-form"
+          id="feedback-form"
         >
           <input
             type="text"
@@ -266,7 +276,7 @@
     </section>
 
     <!-- Section work -->
-    <section class="work">
+    <section class="work" id="work">
       <div class="work__container">
         <svg
           class="work__wave-svg"
@@ -379,7 +389,7 @@
     </section>
 
     <!-- Section travel -->
-    <section class="travel">
+    <section class="travel" id="travel">
       <div class="travel__container">
         <svg
           class="travel__wave-svg"
@@ -691,7 +701,7 @@
     </section>
 
     <!-- Section gallary -->
-    <section class="gallary">
+    <section class="gallary" id="gallary">
       <div class="gallary__container">
         <svg
           class="gallary__wave-svg"
@@ -749,7 +759,7 @@
     </section>
 
     <!-- Contacts and links // Brand section -->
-    <section class="brand">
+    <section class="brand" id="brand">
       <div class="brand__wrapper">
         <a href="#" class="brand__link">
           <svg role="img" viewBox="0 0 24 24">
@@ -848,6 +858,7 @@
             action="http://localhost:3000/api"
             method="post"
             class="feedback-main"
+            id="feedback-main"
           >
             <input
               type="text"
@@ -920,5 +931,17 @@
         </div>
       </div>
     </section>
+
+    <a href="#" class="page__page-up-btn">
+      <svg
+        width="21"
+        height="26"
+        viewBox="0 0 21 26"
+        xmlns="http://www.w3.org/2000/svg"
+        class="page__page-up-icon"
+      >
+        <path d="M11.9879 25.6249L9.01174 25.6249L9.01174 6.93962L3.05936 13.1681L0.0831714 11.611L10.4998 0.711181L20.9165 11.611L17.9403 13.1681L11.9879 6.93962L11.9879 25.6249Z" />
+      </svg>
+    </a>
   </body>
 </html>
