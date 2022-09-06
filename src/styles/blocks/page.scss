@@ -2,11 +2,42 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
+  scroll-behavior: smooth;
 
   &__nav {
     position: sticky;
     top: 0;
     z-index: 1000;
+  }
+
+  &__page-up-btn {
+    @include circle(40px);
+    position: sticky;
+    left: 87%;
+    bottom: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    fill: $color-grey-light-6;
+    opacity: 0;
+    pointer-events: none;
+
+    transition: transform 0.4s,
+      fill 0.4s,
+      border-color 0.4s,
+      box-shadow 0.4s,
+      background-color 0.4s,
+      opacity 0.4s;
+
+    &:hover,
+    &:active {
+      transform: scale(1.1);
+      fill: $color-main;
+      border-color: $color-main;
+      background-color: rgba($color-blue-6, 0.3);
+      box-shadow: 0 0 5px 5px rgba($color-blue-1, 0.2);
+    }
   }
 }
 
